@@ -5,20 +5,28 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Login from './screens/login';
 import Home from './screens/home';
+import Cart from './screens/cart';
+import ProductDetails from './screens/product details';
+import Checkout from './screens/checkout';
 
 export default function App() {
   const nav = createNativeStackNavigator();
-  return (
+  return ( 
+    <View style={{flex:1}}>
     <NavigationContainer>
 
       <nav.Navigator>
 
         <nav.Screen name="Login" component={Login}/>
         <nav.Screen name="Home" component={Home}/>
+        <nav.Screen name="Cart" component={Cart}/>
+        <nav.Screen name="ProductDetails" component={ProductDetails}/>
+        <nav.Screen name="Checkout" component={ Checkout}/>
 
       </nav.Navigator>
 
     </NavigationContainer>
+    </View>
   );
 }
 
