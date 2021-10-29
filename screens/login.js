@@ -7,31 +7,77 @@ export default function Login({navigation}) {
     <View style={{flex: 1,justifyContent:"center",alignItems:"center"}} >
       <Image 
       style={{
-        width:300,
+        width:200,
         height:200,
         borderRadius:10,
-        marginBottom:30 
+        marginTop:400,
+        
+        marginRight:450,
+        
+        
+        transform:[{rotate:"45deg"}]
+        
       }}
       source={{uri:"https://images.unsplash.com/photo-1488459716781-31db52582fe9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
       }}
       />
       
-     <Text style={{color:"rgb(0,0,0,0.B)",fontsize:24 }}>Welcome to</Text>
-      <Text style={{color:"black",fontSize:30,fontWeight:"600"}}>
+      
+      <Image 
+      style={{
+        width:200,
+        height:200,
+        borderRadius:15,
+        
+        
+        marginLeft:400,
+        marginHorizontal:20,
+        marginBottom:200,
+        transform:[{rotate:"45deg"}]
+        
+      }}
+      source={{uri:"https://images.unsplash.com/photo-1488459716781-31db52582fe9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+      }}
+      />
+
+     
+<Image 
+      style={{
+        width:200,
+        height:200,
+        borderRadius:10,
+        marginVertical:60,
+        marginTop:0,
+      
+        
+        marginLeft:20,
+        
+        
+        transform:[{rotate:"45deg"}]
+        
+      }}
+      source={{uri:"https://images.unsplash.com/photo-1488459716781-31db52582fe9?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+      }}
+      />
+
+     <Text style={{color:"rgb(0,0,0,0.B)",fontsize:24 ,fontWeight:"500"}}>Welcome to</Text>
+      <Text style={{color:"black",fontSize:30,fontWeight:"500"}}>
         Sweet Delicious Fruits 
       </Text> 
       <TouchableOpacity 
       style={{
       backgroundColor:"#e3e3",
       borderRadius:10,
+      borderWidth:5,
+      
       display:"flex",
       marginLeft:15,
       flexDirection:"row",
-      alignItems:"center",
+      alignItems:"center", 
       padding:10,
       paddingHorizontal:60,
       paddingBottom:10,
-      marginTop:28,
+      marginTop:20,
       
       
       
@@ -41,21 +87,31 @@ export default function Login({navigation}) {
       
     
       
-      <Text style={{fontSize:20}}> Login with Gmail</Text>
+      <Text style={{fontSize:20, color:'black'}}> Login with Gmail</Text>
+      
       </TouchableOpacity>
       <TouchableOpacity 
       style={{
         backgroundColor:"black",
         borderRadius:10,
+        borderWidth:5,
+        display:"flex",
+        marginLeft:15,
         flexDirection:"row",
+        alignItems:"center",
         padding:10,
-        paddingHorizontal:60,
+        paddingHorizontal:42,
+        paddingBottom:10,
         marginTop:20
       }}
       >
       <AntDesign name="facebook-square" size={24}color="white"/>
       
       <Text style={{fontSize:20,color:'white',marginLeft:10}}> Login with Facebook</Text>
+      </TouchableOpacity>
+      <TouchableOpacity>
+      <Text style={{marginTop:10,fontWeight:500}} >Not a Member ?
+      <Text style={{color:'red',fontWeight:"bold"}}>Sign Up</Text> </Text>
       </TouchableOpacity>
       </View>
       
