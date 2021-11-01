@@ -4,15 +4,17 @@ import { AntDesign} from '@expo/vector-icons';
 
 export default function Login({navigation}) {
   return (
-    <View style={{flex: 1,justifyContent:"center",alignItems:"center"}} >
-      <Image 
+    <View style={{flex: 1,justifyContent:"center",alignItems:"center",backgroundColor:'white'}} >
+    <View style={{flexDirection:"row"}}>
+
+    <Image 
       style={{
         width:200,
         height:200,
         borderRadius:10,
         marginTop:400,
         
-        marginRight:450,
+        // marginRight:450,
         
         
         transform:[{rotate:"45deg"}]
@@ -30,9 +32,9 @@ export default function Login({navigation}) {
         borderRadius:15,
         
         
-        marginLeft:400,
+        marginLeft:100,
         marginHorizontal:20,
-        marginBottom:200,
+        marginTop:400,
         transform:[{rotate:"45deg"}]
         
       }}
@@ -40,12 +42,18 @@ export default function Login({navigation}) {
       }}
       />
 
+
+
+
+
+    </View>
+      
      
 <Image 
       style={{
         width:200,
         height:200,
-        borderRadius:10,
+        borderRadius:20,
         marginVertical:60,
         marginTop:0,
       
@@ -84,13 +92,15 @@ export default function Login({navigation}) {
     }}
       >
       < AntDesign name="google" size={24} color="red"/>
-      
-    
-      
       <Text style={{fontSize:20, color:'black'}}> Login with Gmail</Text>
+      
+      
+
       
       </TouchableOpacity>
       <TouchableOpacity 
+      
+      
       style={{
         backgroundColor:"black",
         borderRadius:10,
@@ -108,14 +118,46 @@ export default function Login({navigation}) {
       <AntDesign name="facebook-square" size={24}color="white"/>
       
       <Text style={{fontSize:20,color:'white',marginLeft:10}}> Login with Facebook</Text>
-      </TouchableOpacity>
-      <TouchableOpacity>
-      <Text style={{marginTop:10,fontWeight:500}} >Not a Member ?
-      <Text style={{color:'red',fontWeight:"bold"}}>Sign Up</Text> </Text>
-      </TouchableOpacity>
-      </View>
+
       
+      </TouchableOpacity>
+
+
+
     
+    
+      <TouchableOpacity 
+      style={{
+      backgroundColor:"#e3e3",
+      borderRadius:5,
+      borderWidth:10,
+      
+      display:"flex",
+      marginLeft:15,
+      flexDirection:"row",
+      alignItems:"center", 
+      padding:10,
+      paddingHorizontal:90,
+      paddingBottom:5,
+      marginTop:20,
+      
+      
+      
+    }}
+      >
+      <Text style={{fontSize:20, color:'black'}}> PASSWORD</Text>
+      </TouchableOpacity>
+    
+
+
+
+      <Text style={{marginTop:10,fontWeight:500}} >Not a Member ?
+      <Text style={{color:'red',fontWeight:"bold"}}>Sign Up</Text> 
+       </Text>
+      
+      
+       </View>
+      
     
   
 
