@@ -99,8 +99,12 @@ export default function Login({navigation}) {
       
       </TouchableOpacity>
       <TouchableOpacity 
-      
-      
+
+      onPress={() =>{ 
+        navigation.navigate("Home")
+      }}
+
+      activeOpacity={0.8}
       style={{
         backgroundColor:"black",
         borderRadius:10,

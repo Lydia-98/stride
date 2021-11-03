@@ -7,7 +7,7 @@ import Login from './screens/login';
 import Home from './screens/home';
 import Cart from './screens/cart';
 import ProductDetails from './screens/product details';
-import Checkout from './screens/checkout';
+import Checkout from './screens/Checkout';
 
 export default function App() {
   const nav = createNativeStackNavigator();
@@ -15,7 +15,7 @@ export default function App() {
     <View style={{flex:1}}>
     <NavigationContainer>
 
-      <nav.Navigator screenOptions={{headerShown:false}} initialRouteName="Login">
+      <nav.Navigator screenOptions={{headerShown:false}} initialRouteName="Home">
 
         <nav.Screen name="Login" component={Login}/>
         <nav.Screen name="Home" component={Home}/>

@@ -27,6 +27,8 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": "A shopping app that sells fresh and juicy fruits",
+    "githubUrl": "https://github.com/Lydia-98/stride"
   }
 }
