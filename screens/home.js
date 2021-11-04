@@ -1,21 +1,27 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, Button, Image, TouchableOpacity} from 'react-native';
+import { StyleSheet, Text, View, Button, Image, TouchableOpacity, TextInput} from 'react-native';
 import { Ionicons, MaterialCommunityIcons, AntDesign} from '@expo/vector-icons';
 
 export default function Home({navigation}) {
   return (
     <View style={styles.container}>
         <View style={{flexDirection: 'row', alignItems: 'center'}}>
-            <View style={{flex: 1}}>
+            <TouchableOpacity style={{flex: 1}}>
                 <MaterialCommunityIcons name="menu" size={24} color="black" />
-            </View>
-            <View style={{flex: 1, alignItems: 'center'}}>
-                <Text style={{fontSize: 17, fontWeight: 'bold'}}>Products</Text>
-            </View>
+                
+            </TouchableOpacity>
+           
             <TouchableOpacity style={{flex: 1, alignItems: 'flex-end'}} onPress={() => navigation.navigate("Cart")}>
                 <AntDesign name="shoppingcart" size={24} color="black" />
             </TouchableOpacity>
+        </View>
+
+        <View style={styles.searchContainer}>
+            <View style={styles.searchInner}>
+                <TextInput style={styles.search} placeholder="search"></TextInput>
+                <AntDesign name="search1" size={14} color="black" />
+            </View>
         </View>
 
         <View style={{flexDirection: 'row', flexWrap: "wrap", justifyContent: 'space-between'}}>
@@ -33,8 +39,8 @@ export default function Home({navigation}) {
                 </View>
                 <View style={{flexDirection: 'row', alignItems: 'center'}}>
                     <Text style={{flex: 1, fontSize: 17, color: "#656a7d", fontWeight: 'bold'}}>$ 35.00</Text>
-                    <View style={{flex: 1, alignItems: 'flex-end'}}>
-                        <View style={{paddingHorizontal: 10, paddingVertical: 5, backgroundColor: '#aece96', borderRadius: 50}}><Text style={{color: 'white'}}>+</Text></View>
+                    <View style={{flex: 1, alignItems: 'flex-end'}}  >
+                        <View style={{paddingHorizontal: 10, paddingVertical: 5, backgroundColor: '#aece96', borderRadius: 50}} ><Text style={{color: 'white'}}>+</Text></View>
                     </View>
                 </View>
             </View>
@@ -42,7 +48,7 @@ export default function Home({navigation}) {
 
             {/* product item */}
             <View style={{borderWidth:0.5, padding: 20, borderRadius: 20, marginTop: 20, borderColor: "#c4c4c4"}}>
-                <View style={{padding: 30, backgroundColor: '#fff3d9', borderRadius: 20, marginBottom: 20}}>
+                <View style={{padding: 30, backgroundColor: '#fff3d9', borderRadius: 20, marginBottom: 20}} onPress={() => navigation.navigate("Home")} >
                     <Image source={require("../assets/Apple.jpg")} style={{ width: 100, height: 100}}/>
                 </View>
 
@@ -322,5 +328,26 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     paddingTop: 20,
     paddingHorizontal: 22,
+  },
+  searchContainer:{
+     flexDirection: 'row',
+     width: '100%',
+     justifyContent: 'center',
+  },
+  searchInner: {
+    flexDirection: 'row',
+    width: '50%',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#f4f4f4',
+    borderRadius: 20,
+    borderColor: '#c4c4c4',
+    borderWidth: 1,
+    padding: 5,
+
+  },
+
+  search:{
+      padding: 5,
   },
 });

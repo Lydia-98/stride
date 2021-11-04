@@ -3,11 +3,11 @@ import React from 'react';
 import { StyleSheet, Text, View, Button} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import Login from './screens/login';
-import Home from './screens/home';
-import Cart from './screens/cart';
-import ProductDetails from './screens/product details';
+import Login from './screens/Login';
+import Home from './screens/Home';
+import Cart from './screens/Cart';
 import Checkout from './screens/Checkout';
+import Details from './screens/Details';
 
 export default function App() {
   const nav = createNativeStackNavigator();
@@ -20,7 +20,7 @@ export default function App() {
         <nav.Screen name="Login" component={Login}/>
         <nav.Screen name="Home" component={Home}/>
         <nav.Screen name="Cart" component={Cart}/>
-        <nav.Screen name="ProductDetails" component={ProductDetails}/>
+        <nav.Screen name="Details" component={Details}/>
         <nav.Screen name="Checkout" component={ Checkout}/>
 
       </nav.Navigator>

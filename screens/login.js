@@ -9,11 +9,11 @@ export default function Login({navigation}) {
 
     <Image 
       style={{
-        width:200,
-        height:200,
+        width:100,
+        height:100,
         borderRadius:10,
-        marginTop:400,
-        
+        marginTop:600,
+        alignContents:'center',
         // marginRight:450,
         
         
@@ -27,14 +27,16 @@ export default function Login({navigation}) {
       
       <Image 
       style={{
-        width:200,
-        height:200,
+        width:100,
+        height:100,
         borderRadius:15,
         
         
-        marginLeft:100,
+        marginLeft:50,
         marginHorizontal:20,
-        marginTop:400,
+        
+        marginTop:600,
+        alignContents:'center',
         transform:[{rotate:"45deg"}]
         
       }}
@@ -51,16 +53,16 @@ export default function Login({navigation}) {
      
 <Image 
       style={{
-        width:200,
-        height:200,
+        width:100,
+        height:100,
         borderRadius:20,
         marginVertical:60,
         marginTop:0,
       
         
-        marginLeft:20,
+        marginRight:20,
         
-        
+        alignContents:'center',
         transform:[{rotate:"45deg"}]
         
       }}
