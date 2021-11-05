@@ -1,4 +1,4 @@
-import { StatusBar } from 'expo-status-bar';
+
 import React from 'react';
 import { StyleSheet, Text, View, Button, Image, TouchableOpacity, TextInput} from 'react-native';
 import { Ionicons, MaterialCommunityIcons, AntDesign} from '@expo/vector-icons';
@@ -39,8 +39,10 @@ export default function Home({navigation}) {
                 </View>
                 <View style={{flexDirection: 'row', alignItems: 'center'}}>
                     <Text style={{flex: 1, fontSize: 17, color: "#656a7d", fontWeight: 'bold'}}>$ 35.00</Text>
-                    <View style={{flex: 1, alignItems: 'flex-end'}}  >
-                        <View style={{paddingHorizontal: 10, paddingVertical: 5, backgroundColor: '#aece96', borderRadius: 50}} ><Text style={{color: 'white'}}>+</Text></View>
+                    <View style={{flex: 1, alignItems: 'flex-end'}} onPress={() => navigation.navigate("Cart")} >
+                        <TouchableOpacity style={{paddingHorizontal: 10, paddingVertical: 5, backgroundColor: '#aece96', borderRadius: 50}} onPress={() => navigation.navigate("Details")}>
+                            <Ionicons name="add" size={25} color="#fff" />
+                        </TouchableOpacity>
                     </View>
                 </View>
             </View>
@@ -59,7 +61,9 @@ export default function Home({navigation}) {
                 <View style={{flexDirection: 'row', alignItems: 'center'}}>
                     <Text style={{flex: 1, fontSize: 17, color: "#656a7d", fontWeight: 'bold'}}>$ 18.00</Text>
                     <View style={{flex: 1, alignItems: 'flex-end'}}>
-                        <View style={{paddingHorizontal: 10, paddingVertical: 5, backgroundColor: '#aece96', borderRadius: 50}}><Text style={{color: 'white'}}>+</Text></View>
+                    <TouchableOpacity style={{paddingHorizontal: 10, paddingVertical: 5, backgroundColor: '#aece96', borderRadius: 50}} onPress={() => navigation.navigate("Details")}>
+                            <Ionicons name="add" size={25} color="#fff" />
+                        </TouchableOpacity>
                     </View>
                 </View>
             </View>
@@ -78,7 +82,9 @@ export default function Home({navigation}) {
                 <View style={{flexDirection: 'row', alignItems: 'center'}}>
                     <Text style={{flex: 1, fontSize: 17, color: "#656a7d", fontWeight: 'bold'}}>$ 10.00</Text>
                     <View style={{flex: 1, alignItems: 'flex-end'}}>
-                        <View style={{paddingHorizontal: 10, paddingVertical: 5, backgroundColor: '#aece96', borderRadius: 50}}><Text style={{color: 'white'}}>+</Text></View>
+                    <TouchableOpacity style={{paddingHorizontal: 10, paddingVertical: 5, backgroundColor: '#aece96', borderRadius: 50}} onPress={() => navigation.navigate("Details")}>
+                            <Ionicons name="add" size={25} color="#fff" />
+                        </TouchableOpacity>
                     </View>
                 </View>
             </View>
@@ -97,7 +103,9 @@ export default function Home({navigation}) {
                 <View style={{flexDirection: 'row', alignItems: 'center'}}>
                     <Text style={{flex: 1, fontSize: 17, color: "#656a7d", fontWeight: 'bold'}}>$ 10.00</Text>
                     <View style={{flex: 1, alignItems: 'flex-end'}}>
-                        <View style={{paddingHorizontal: 10, paddingVertical: 5, backgroundColor: '#aece96', borderRadius: 50}}><Text style={{color: 'white'}}>+</Text></View>
+                    <TouchableOpacity style={{paddingHorizontal: 10, paddingVertical: 5, backgroundColor: '#aece96', borderRadius: 50}} onPress={() => navigation.navigate("Details")}>
+                            <Ionicons name="add" size={25} color="#fff" />
+                        </TouchableOpacity>
                     </View>
                 </View>
             </View>
@@ -116,7 +124,9 @@ export default function Home({navigation}) {
                 <View style={{flexDirection: 'row', alignItems: 'center'}}>
                     <Text style={{flex: 1, fontSize: 17, color: "#656a7d", fontWeight: 'bold'}}>$ 15.00</Text>
                     <View style={{flex: 1, alignItems: 'flex-end'}}>
-                        <View style={{paddingHorizontal: 10, paddingVertical: 5, backgroundColor: '#aece96', borderRadius: 50}}><Text style={{color: 'white'}}>+</Text></View>
+                    <TouchableOpacity style={{paddingHorizontal: 10, paddingVertical: 5, backgroundColor: '#aece96', borderRadius: 50}} onPress={() => navigation.navigate("Details")}>
+                            <Ionicons name="add" size={25} color="#fff" />
+                        </TouchableOpacity>
                     </View>
                 </View>
             </View>
@@ -135,7 +145,9 @@ export default function Home({navigation}) {
                 <View style={{flexDirection: 'row', alignItems: 'center'}}>
                     <Text style={{flex: 1, fontSize: 17, color: "#656a7d", fontWeight: 'bold'}}>$ 16.00</Text>
                     <View style={{flex: 1, alignItems: 'flex-end'}}>
-                        <View style={{paddingHorizontal: 10, paddingVertical: 5, backgroundColor: '#aece96', borderRadius: 50}}><Text style={{color: 'white'}}>+</Text></View>
+                    <TouchableOpacity style={{paddingHorizontal: 10, paddingVertical: 5, backgroundColor: '#aece96', borderRadius: 50}} onPress={() => navigation.navigate("Details")}>
+                            <Ionicons name="add" size={25} color="#fff" />
+                        </TouchableOpacity>
                     </View>
                 </View>
             </View>
@@ -155,7 +167,9 @@ export default function Home({navigation}) {
                 <View style={{flexDirection: 'row', alignItems: 'center'}}>
                     <Text style={{flex: 1, fontSize: 17, color: "#656a7d", fontWeight: 'bold'}}>$ 25.00</Text>
                     <View style={{flex: 1, alignItems: 'flex-end'}}>
-                        <View style={{paddingHorizontal: 10, paddingVertical: 5, backgroundColor: '#aece96', borderRadius: 50}}><Text style={{color: 'white'}}>+</Text></View>
+                    <TouchableOpacity style={{paddingHorizontal: 10, paddingVertical: 5, backgroundColor: '#aece96', borderRadius: 50}} onPress={() => navigation.navigate("Details")}>
+                            <Ionicons name="add" size={25} color="#fff" />
+                        </TouchableOpacity>
                     </View>
                 </View>
             </View>
@@ -174,7 +188,9 @@ export default function Home({navigation}) {
                 <View style={{flexDirection: 'row', alignItems: 'center'}}>
                     <Text style={{flex: 1, fontSize: 17, color: "#656a7d", fontWeight: 'bold'}}>$ 30.00</Text>
                     <View style={{flex: 1, alignItems: 'flex-end'}}>
-                        <View style={{paddingHorizontal: 10, paddingVertical: 5, backgroundColor: '#aece96', borderRadius: 50}}><Text style={{color: 'white'}}>+</Text></View>
+                    <TouchableOpacity style={{paddingHorizontal: 10, paddingVertical: 5, backgroundColor: '#aece96', borderRadius: 50}} onPress={() => navigation.navigate("Details")}>
+                            <Ionicons name="add" size={25} color="#fff" />
+                        </TouchableOpacity>
                     </View>
                 </View>
             </View>
@@ -193,7 +209,9 @@ export default function Home({navigation}) {
                 <View style={{flexDirection: 'row', alignItems: 'center'}}>
                     <Text style={{flex: 1, fontSize: 17, color: "#656a7d", fontWeight: 'bold'}}>$ 10.00</Text>
                     <View style={{flex: 1, alignItems: 'flex-end'}}>
-                        <View style={{paddingHorizontal: 10, paddingVertical: 5, backgroundColor: '#aece96', borderRadius: 50}}><Text style={{color: 'white'}}>+</Text></View>
+                    <TouchableOpacity style={{paddingHorizontal: 10, paddingVertical: 5, backgroundColor: '#aece96', borderRadius: 50}} onPress={() => navigation.navigate("Details")}>
+                            <Ionicons name="add" size={25} color="#fff" />
+                        </TouchableOpacity>
                     </View>
                 </View>
             </View>
@@ -212,7 +230,9 @@ export default function Home({navigation}) {
                 <View style={{flexDirection: 'row', alignItems: 'center'}}>
                     <Text style={{flex: 1, fontSize: 17, color: "#656a7d", fontWeight: 'bold'}}>$ 16.00</Text>
                     <View style={{flex: 1, alignItems: 'flex-end'}}>
-                        <View style={{paddingHorizontal: 10, paddingVertical: 5, backgroundColor: '#aece96', borderRadius: 50}}><Text style={{color: 'white'}}>+</Text></View>
+                    <TouchableOpacity style={{paddingHorizontal: 10, paddingVertical: 5, backgroundColor: '#aece96', borderRadius: 50}} onPress={() => navigation.navigate("Details")}>
+                            <Ionicons name="add" size={25} color="#fff" />
+                        </TouchableOpacity>
                     </View>
                 </View>
             </View>
@@ -231,7 +251,9 @@ export default function Home({navigation}) {
                 <View style={{flexDirection: 'row', alignItems: 'center'}}>
                     <Text style={{flex: 1, fontSize: 17, color: "#656a7d", fontWeight: 'bold'}}>$ 5.00</Text>
                     <View style={{flex: 1, alignItems: 'flex-end'}}>
-                        <View style={{paddingHorizontal: 10, paddingVertical: 5, backgroundColor: '#aece96', borderRadius: 50}}><Text style={{color: 'white'}}>+</Text></View>
+                    <TouchableOpacity style={{paddingHorizontal: 10, paddingVertical: 5, backgroundColor: '#aece96', borderRadius: 50}} onPress={() => navigation.navigate("Details")}>
+                            <Ionicons name="add" size={25} color="#fff" />
+                        </TouchableOpacity>
                     </View>
                 </View>
             </View>
@@ -250,7 +272,9 @@ export default function Home({navigation}) {
                 <View style={{flexDirection: 'row', alignItems: 'center'}}>
                     <Text style={{flex: 1, fontSize: 17, color: "#656a7d", fontWeight: 'bold'}}>$ 20.00</Text>
                     <View style={{flex: 1, alignItems: 'flex-end'}}>
-                        <View style={{paddingHorizontal: 10, paddingVertical: 5, backgroundColor: '#aece96', borderRadius: 50}}><Text style={{color: 'white'}}>+</Text></View>
+                    <TouchableOpacity style={{paddingHorizontal: 10, paddingVertical: 5, backgroundColor: '#aece96', borderRadius: 50}} onPress={() => navigation.navigate("Details")}>
+                            <Ionicons name="add" size={25} color="#fff" />
+                        </TouchableOpacity>
                     </View>
                 </View>
             </View>
@@ -268,7 +292,9 @@ export default function Home({navigation}) {
                 <View style={{flexDirection: 'row', alignItems: 'center'}}>
                     <Text style={{flex: 1, fontSize: 17, color: "#656a7d", fontWeight: 'bold'}}>$ 25.00</Text>
                     <View style={{flex: 1, alignItems: 'flex-end'}}>
-                        <View style={{paddingHorizontal: 10, paddingVertical: 5, backgroundColor: '#aece96', borderRadius: 50}}><Text style={{color: 'white'}}>+</Text></View>
+                    <TouchableOpacity style={{paddingHorizontal: 10, paddingVertical: 5, backgroundColor: '#aece96', borderRadius: 50}} onPress={() => navigation.navigate("Details")}>
+                            <Ionicons name="add" size={25} color="#fff" />
+                        </TouchableOpacity>
                     </View>
                 </View>
             </View>
@@ -287,7 +313,9 @@ export default function Home({navigation}) {
                 <View style={{flexDirection: 'row', alignItems: 'center'}}>
                     <Text style={{flex: 1, fontSize: 17, color: "#656a7d", fontWeight: 'bold'}}>$ 5.00</Text>
                     <View style={{flex: 1, alignItems: 'flex-end'}}>
-                        <View style={{paddingHorizontal: 10, paddingVertical: 5, backgroundColor: '#aece96', borderRadius: 50}}><Text style={{color: 'white'}}>+</Text></View>
+                    <TouchableOpacity style={{paddingHorizontal: 10, paddingVertical: 5, backgroundColor: '#aece96', borderRadius: 50}} onPress={() => navigation.navigate("Details")}>
+                            <Ionicons name="add" size={25} color="#fff" />
+                        </TouchableOpacity>
                     </View>
                 </View>
             </View>
@@ -306,7 +334,9 @@ export default function Home({navigation}) {
                 <View style={{flexDirection: 'row', alignItems: 'center'}}>
                     <Text style={{flex: 1, fontSize: 17, color: "#656a7d", fontWeight: 'bold'}}>$ 8.00</Text>
                     <View style={{flex: 1, alignItems: 'flex-end'}}>
-                        <View style={{paddingHorizontal: 10, paddingVertical: 5, backgroundColor: '#aece96', borderRadius: 50}}><Text style={{color: 'white'}}>+</Text></View>
+                    <TouchableOpacity style={{paddingHorizontal: 10, paddingVertical: 5, backgroundColor: '#aece96', borderRadius: 50}} onPress={() => navigation.navigate("Details")}>
+                            <Ionicons name="add" size={25} color="#fff" />
+                        </TouchableOpacity>
                     </View>
                 </View>
             </View>

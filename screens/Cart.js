@@ -9,7 +9,7 @@ export default function Cart({navigation}) {
 
       {/* Top Navigation */}
       <View style={{flexDirection: 'row', alignItems: 'center', marginBottom: 10}}>
-          <TouchableOpacity style={{flex: 1}} >
+          <TouchableOpacity style={{flex: 1}}  onPress={() => navigation.navigate("Home")}>
             <Ionicons name="chevron-back" size={24} color="#645eaf" />
           </TouchableOpacity>
           <View style={{flex: 1, alignItems: 'center'}}>
